@@ -4,7 +4,7 @@
 
 #main {
     /* max-width: 767px; */
-    padding-top: 40px;
+    padding-top: 10%;
 }
 
 p {
@@ -16,11 +16,13 @@ p {
 }
 
 html {
-  background: url(http://wallpapercave.com/wp/lPjE8NZ.jpg) no-repeat center center fixed;
+  background: url(/img/eminem.png) no-repeat center center fixed;
+      background-position: calc(60% - 200px) 50%;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  background-color: #000;
 }
 
 #bg {
