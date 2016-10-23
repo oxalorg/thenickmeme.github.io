@@ -5,54 +5,47 @@
         <title></title>
         <link rel="stylesheet" href="css/normalize.css" media="screen" title="no title" charset="utf-8">
         <link rel="stylesheet" href="css/skeleton.css" media="screen" title="no title" charset="utf-8">
-        <link rel="stylesheet" href="css/nikkfgt.css" media="screen" title="no title" charset="utf-8">
+        <link rel="stylesheet" href="css/icons.css" media="screen" title="no title" charset="utf-8">
+        <link rel="stylesheet" href="css/nick.css" media="screen" title="no title" charset="utf-8">
         <script   src="https://code.jquery.com/jquery-2.2.4.min.js"   integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="   crossorigin="anonymous"></script>
-        <script type="text/javascript">
-                var colors = ["#00F", "#0F0", "#F00", "#F0F"];
-                var css = document.createElement("style");
-                css.type = "text/css";
-                var colorIndex = 0;
 
-                function changeColors() {
-                    colorIndex = (colorIndex + 1) % colors.length;
-                    var nextColor = colors[colorIndex];
-                    css.innerHTML += "#fgt{color:" + nextColor + ";}";
-                    document.body.appendChild(css);
-                }
-
-                var currentNumber = 1;
-
-                function progressiveRandomNumber() {
-                    if (currentNumber > 400)
-                        currentNumber = 1;
-                    currentNumber += currentNumber / (Math.sqrt(currentNumber)) + currentNumber / 100;
-                    // console.log(currentNumber);
-                    return currentNumber;
-                }
-
-                (function randomizeChangeColor() {
-                    var randomTime = progressiveRandomNumber();
-                    setTimeout(function () {
-                        changeColors();
-                        randomizeChangeColor();
-                    }, randomTime);
-                }());
-        </script>
     </head>
     <body>
-        <canvas id="canvasRegn" style="position : absolute; top : 0px; left : 0px;"></canvas>
-        <!-- <canvas id="canvas" style="position : absolute; top : 0px; left : 0px;"></canvas> -->
-        <!-- <script type="text/javascript" src="js/rain.js"></script> -->
-        <script type="text/javascript" src="js/kappa.js"></script>
-        <div class="container">
+        <div id="main" class="container">
             <div class="row">
                 <div class="twelve columns">
-                    <img src="img/bg.jpg" id="bg">
+                    <h1 id="fgt">Nikket Chandwani</h1>
                 </div>
             </div>
             <div class="row">
-                <div class="twelve columns">
-                    <h1 id="fgt">NIKK FGT</h1>
+                <div class="eight columns">
+                    <p>A bit you'd wanna know about him.</p> 
+                    <p>'Sup' is what'd he'll start the conversation with.</p>
+                    <ul>
+                        <li>Gamer</li>
+                        <li>Student</li>
+                        <li>Rookie Programmer</li>
+                        <li>Meme Provider</li>
+                    </ul>
+                    <p>.. and what else do you need? OKAY, got more for ya, he's just 16.</p>
+                    <p>Currently studying in KC College, Churchgate.</p><p>Completed
+                    schooling from Don Bosco, Matunga.<p>
+                    <p>Although he's an
+                    introvert.</p>
+                </div>
+                <div class="four columns">
+                    <!-- <img class="u-max-full-width" src="img/fgt.png"> -->
+                </div>
+            </div>
+            <div class="row">
+                <div class="twelve columns" id="icons">
+                    <ul class="soc">
+                        <li><a class="soc-instagram" href="#"></a></li>
+                        <li><a class="soc-snapchat" href="#"></a></li>
+                        <li><a class="soc-facebook" href="#"></a></li>
+                        <li><a class="soc-steam" href="#"></a></li>
+                        <li><a class="soc-mail soc-icon-last" href="#"></a></li>
+                    </ul>                
                 </div>
             </div>
         </div>
